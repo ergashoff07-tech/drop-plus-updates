@@ -1,0 +1,198 @@
+{
+ "schema": 1,
+ "version": "1.1.2",
+ "hosts": {
+  "cep": {
+   "dir": "1.1.2/cep/",
+   "files": [
+    {
+     "p": "CSXS/manifest.xml",
+     "h": "4ad90f9837730f21e3a260d817a3aadb0c71b6a1f22a778e33df46cb5ff97d2e",
+     "s": 1720
+    },
+    {
+     "p": "LICENSES.txt",
+     "h": "db0cc962ae009fbe289bf20bbaa518e8b028e66dde1d92e1e34bf52a09d3926e",
+     "s": 885
+    },
+    {
+     "p": "css/fonts/OFL.txt",
+     "h": "f429f739351287574c0c3175a9222bb3e49c7cad3f568a04f2c08d74c107724e",
+     "s": 4509
+    },
+    {
+     "p": "css/fonts/montserrat-cyrillic-wght-normal.woff2",
+     "h": "a187b077090fe8ae3fd2d7496aabbeae604819c718a282e0afc92df72b450766",
+     "s": 23828
+    },
+    {
+     "p": "css/fonts/montserrat-latin-ext-wght-normal.woff2",
+     "h": "54d9a78b7ff60b689ad9f3017ffac8547b5d871afec733f6c1c3ae36577ee504",
+     "s": 70688
+    },
+    {
+     "p": "css/fonts/montserrat-latin-wght-normal.woff2",
+     "h": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+     "s": 37956
+    },
+    {
+     "p": "css/fonts/sora-latin-ext-wght-normal.woff2",
+     "h": "c163c536f68befd99a83d4f17e8b88030e7f54229688a45c44f70c7149db7385",
+     "s": 15548
+    },
+    {
+     "p": "css/fonts/sora-latin-wght-normal.woff2",
+     "h": "fa26406eeda9a3c6ec3d9ea8813c3045d6dc755e30c716d5c094e8ef43be5a7f",
+     "s": 33652
+    },
+    {
+     "p": "css/style.css",
+     "h": "b1bebe9fd5ede4583f943b742e645d7b66fdc70e83bce197a30f82df5c89ac83",
+     "s": 47912
+    },
+    {
+     "p": "index.html",
+     "h": "fc94d268ffd028a906aaa971ee3295d512487c413a3a7edbe1afc52031c26a80",
+     "s": 19659
+    },
+    {
+     "p": "js/CSInterface.js",
+     "h": "96984d5b94a373c5dbff99093ef59121f38b514e7ab78bb62b90756d8e862772",
+     "s": 40012
+    },
+    {
+     "p": "js/bgremove.js",
+     "h": "5cc56de8f0bbb9bbb09f2553c310671ec13a7d97758ea463224b91a16e3c36ac",
+     "s": 6256
+    },
+    {
+     "p": "js/i18n.js",
+     "h": "1dd38d82985c0e00a50877409b5a7ca1c97182d63872c7ce30dd99e9d8989085",
+     "s": 32454
+    },
+    {
+     "p": "js/license.js",
+     "h": "de9ea63c746dcd74c7b6b1caaa100625488a41e83373c9a69f5600e3913fa773",
+     "s": 36902
+    },
+    {
+     "p": "js/main.js",
+     "h": "c62a370615be00a596d75bb49d0683c18e170d0f1f2327b3e7949ba445aedef6",
+     "s": 203228
+    },
+    {
+     "p": "js/updater.js",
+     "h": "2e9e8a7678d21ff76c3d47ff1d4c1b61db270fef4fc61e2ad7344fe6c117f200",
+     "s": 25206
+    },
+    {
+     "p": "jsx/premiere.jsx",
+     "h": "d3a7d745fa1c426373c779c96d4e45508d146515c5821895c5b512a66514c390",
+     "s": 39843
+    }
+   ],
+   "remove": []
+  },
+  "resolve": {
+   "dir": "1.1.2/resolve/",
+   "files": [
+    {
+     "p": "LICENSES.txt",
+     "h": "8035721f4ae7567a15a157e7cd5fe9d378d49da0fe4067e09d9b3a0308e88f5f",
+     "s": 929
+    },
+    {
+     "p": "WorkflowIntegration.node",
+     "h": "84a6e79e4a4fafe6bd039bdd80c5ece4f23556c5abfac2f8ac3ac0602a40e3cb",
+     "s": 335360
+    },
+    {
+     "p": "css/fonts/OFL.txt",
+     "h": "f429f739351287574c0c3175a9222bb3e49c7cad3f568a04f2c08d74c107724e",
+     "s": 4509
+    },
+    {
+     "p": "css/fonts/montserrat-cyrillic-wght-normal.woff2",
+     "h": "a187b077090fe8ae3fd2d7496aabbeae604819c718a282e0afc92df72b450766",
+     "s": 23828
+    },
+    {
+     "p": "css/fonts/montserrat-latin-ext-wght-normal.woff2",
+     "h": "54d9a78b7ff60b689ad9f3017ffac8547b5d871afec733f6c1c3ae36577ee504",
+     "s": 70688
+    },
+    {
+     "p": "css/fonts/montserrat-latin-wght-normal.woff2",
+     "h": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+     "s": 37956
+    },
+    {
+     "p": "css/fonts/sora-latin-ext-wght-normal.woff2",
+     "h": "c163c536f68befd99a83d4f17e8b88030e7f54229688a45c44f70c7149db7385",
+     "s": 15548
+    },
+    {
+     "p": "css/fonts/sora-latin-wght-normal.woff2",
+     "h": "fa26406eeda9a3c6ec3d9ea8813c3045d6dc755e30c716d5c094e8ef43be5a7f",
+     "s": 33652
+    },
+    {
+     "p": "css/style.css",
+     "h": "b1bebe9fd5ede4583f943b742e645d7b66fdc70e83bce197a30f82df5c89ac83",
+     "s": 47912
+    },
+    {
+     "p": "index.html",
+     "h": "61d6d3e2017278cefb0f3a69b62a8ed7886996ba3a64beeabb021ecafd7e633a",
+     "s": 19622
+    },
+    {
+     "p": "js/bgremove.js",
+     "h": "5cc56de8f0bbb9bbb09f2553c310671ec13a7d97758ea463224b91a16e3c36ac",
+     "s": 6256
+    },
+    {
+     "p": "js/i18n.js",
+     "h": "be3b11349fc2608df98cc24db2b4c151e8399f405640d3ae0f967325e77f9971",
+     "s": 33490
+    },
+    {
+     "p": "js/license.js",
+     "h": "de9ea63c746dcd74c7b6b1caaa100625488a41e83373c9a69f5600e3913fa773",
+     "s": 36902
+    },
+    {
+     "p": "js/main.js",
+     "h": "c58a01e1759d66f70bbb5d6e2f113f4a2d564d6f8440983930d510d5a95e9020",
+     "s": 202598
+    },
+    {
+     "p": "js/updater.js",
+     "h": "5d6ba9aa2644bb89db0b1e722f1ec6db9c98ed682f77cff223a4caf11cfaec4d",
+     "s": 25185
+    },
+    {
+     "p": "main.js",
+     "h": "cc0354099308f78cdb42c8b061679ad38d90511c230d16115bc8102333e1c5d8",
+     "s": 2306
+    },
+    {
+     "p": "manifest.xml",
+     "h": "bbc8ae6f5594d176e4157c4a8ea3100f86d7ae88ee0f41bb2ac29b1e58a0a975",
+     "s": 333
+    },
+    {
+     "p": "package.json",
+     "h": "12321424fc0a7cd1c7aab3b01d74a703a93189399f23534dc58bf35c20e00238",
+     "s": 180
+    },
+    {
+     "p": "preload.js",
+     "h": "5ba0612bc581740a3071a6b5c23efd8f290bbef448bbdb9adf38c849edad86bd",
+     "s": 10619
+    }
+   ],
+   "remove": []
+  }
+ }
+}
