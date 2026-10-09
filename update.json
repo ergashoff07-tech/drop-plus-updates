@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "version": "1.1.3",
+ "version": "1.1.4",
  "hosts": {
   "cep": {
-   "dir": "1.1.3/cep/",
+   "dir": "1.1.4/cep/",
    "files": [
     {
      "p": "CSXS/manifest.xml",
-     "h": "dc46a36eb4d6a9aa9cf55c84d4329e9664c6028f33af7063ba794174289ce8f1",
+     "h": "a442282c2630aeba0035dd569673aaab280979227eef67d089f2cf67c328783f",
      "s": 1720
     },
     {
@@ -47,13 +47,13 @@
     },
     {
      "p": "css/style.css",
-     "h": "b1bebe9fd5ede4583f943b742e645d7b66fdc70e83bce197a30f82df5c89ac83",
-     "s": 47912
+     "h": "d05fd18ad1adfe364fb3bb22a7533683285b6203f3aefd50223c60c09ffec307",
+     "s": 48284
     },
     {
      "p": "index.html",
-     "h": "fc94d268ffd028a906aaa971ee3295d512487c413a3a7edbe1afc52031c26a80",
-     "s": 19659
+     "h": "a4df75c41f6b587649b657154500a69a8e7d3d33ba5a88d1de586e1c2da52c59",
+     "s": 19807
     },
     {
      "p": "js/CSInterface.js",
@@ -67,8 +67,8 @@
     },
     {
      "p": "js/i18n.js",
-     "h": "98ec09afbd5cbddd54886c5ec1e964e226b57bca9fc02df9deec77a505860b17",
-     "s": 74259
+     "h": "7f883df0a3daacdc251e3a792e9de5cea81a8fb96a279d569b620fb9b1714d8a",
+     "s": 74320
     },
     {
      "p": "js/license.js",
@@ -77,13 +77,13 @@
     },
     {
      "p": "js/main.js",
-     "h": "9b0be702cbbf01677ff63b4b7f8aa75c246e8a1f6df8f0f6866cad55e03b68ba",
-     "s": 203010
+     "h": "51d7881f03637c374ba540234894c9ae3f2ef1ca56d6679c4201b6805825f8b7",
+     "s": 203085
     },
     {
      "p": "js/updater.js",
-     "h": "4933685993b6c582927720607cd0741fec21af0c21c17337ce4fdca0ca7df2a6",
-     "s": 25225
+     "h": "c05a290cc900d0df1e10813d55a937bb56c71f580878bcfcec9b8e2052a17067",
+     "s": 25433
     },
     {
      "p": "jsx/premiere.jsx",
@@ -94,7 +94,7 @@
    "remove": []
   },
   "resolve": {
-   "dir": "1.1.3/resolve/",
+   "dir": "1.1.4/resolve/",
    "files": [
     {
      "p": "LICENSES.txt",
@@ -138,13 +138,13 @@
     },
     {
      "p": "css/style.css",
-     "h": "b1bebe9fd5ede4583f943b742e645d7b66fdc70e83bce197a30f82df5c89ac83",
-     "s": 47912
+     "h": "d05fd18ad1adfe364fb3bb22a7533683285b6203f3aefd50223c60c09ffec307",
+     "s": 48284
     },
     {
      "p": "index.html",
-     "h": "61d6d3e2017278cefb0f3a69b62a8ed7886996ba3a64beeabb021ecafd7e633a",
-     "s": 19622
+     "h": "c88a2711df1921728090862891700aae185ab2a88a52347bcb4d4bdb5cbc796d",
+     "s": 19770
     },
     {
      "p": "js/bgremove.js",
@@ -153,8 +153,8 @@
     },
     {
      "p": "js/i18n.js",
-     "h": "98ec09afbd5cbddd54886c5ec1e964e226b57bca9fc02df9deec77a505860b17",
-     "s": 74259
+     "h": "7f883df0a3daacdc251e3a792e9de5cea81a8fb96a279d569b620fb9b1714d8a",
+     "s": 74320
     },
     {
      "p": "js/license.js",
@@ -163,13 +163,13 @@
     },
     {
      "p": "js/main.js",
-     "h": "7d3048ee5b3056377d0b50fef7b8b7a6d9453b7df1de602ad97a8ec6987f5013",
-     "s": 202807
+     "h": "4fcf9ee62f01f8fc1afdf3e56cfb539ba9cf820fb7a32ce58a5af0c80a6bba96",
+     "s": 203657
     },
     {
      "p": "js/updater.js",
-     "h": "af2a374f795f8e2c70dcc58c69cd62a70406835f14fd3324d48bf303f81f982e",
-     "s": 24980
+     "h": "3afbc165203e48c4eb82eb352190eb5888c0cd3bdabe20ab3df38132cdbc9749",
+     "s": 25199
     },
     {
      "p": "main.js",
@@ -178,12 +178,12 @@
     },
     {
      "p": "manifest.xml",
-     "h": "21cc89004bf2a06c2c24e0f516bc9f9da1484720d1f6ea6756921965454ef996",
+     "h": "1bfb535f3adc712161dae2143b4e494e4f0b450e4582268b0564a74dfc751048",
      "s": 333
     },
     {
      "p": "package.json",
-     "h": "ef2c57eb5bac17126a5078e5268205e77dbea93e3d4863db8c1792ca14067cb2",
+     "h": "c31c0431554ba20200bd5318d3ed62febbf99681fe0bd39fdeda445e248e54ed",
      "s": 180
     },
     {
