@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="uz" data-default-lang="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP+ - DaVinci Resolve</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="brand">
+            <div class="brand-icon">
+                <svg viewBox="0 0 120 120" aria-hidden="true"><path fill-rule="evenodd" d="M14 38a8 8 0 0 1 8-8h28a41 41 0 0 1 0 82H22a8 8 0 0 1-8-8zM60 69a13 13 0 1 0 0 26a13 13 0 1 0 0-26z"/><path d="M90 6h10v12h12v10h-12v12H90V28H78V18h12z"/></svg>
+            </div>
+            <div>
+                <span class="brand-title">DROP<span class="brand-plus">+</span></span>
+            </div>
+        </div>
+        <div class="status-pill" id="premiereStatus" title="DaVinci Resolve aloqa holati">
+            <div class="status-dot" id="statusDot"></div>
+            <span id="statusText">Tekshirilmoqda...</span>
+        </div>
+        <button type="button" class="lang-btn" id="langBtn" data-no-i18n>UZ</button>
+    </header>
+
+    <main id="homeView" class="home-view">
+        <div class="home-hero">
+            <div class="home-eyebrow">YUKLASH · QIDIRISH · IJOD QILISH</div>
+            <h1>Barcha media bitta joyda</h1>
+            <p>Kerakli material turini tanlang va DaVinci Resolve loyihangizda davom eting.</p>
+        </div>
+        <div class="home-cards">
+            <button class="home-card home-card--video" data-open-view="video">
+                <span class="home-card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg></span>
+                <span class="home-card-copy"><strong>Video</strong><small>YouTube va Instagram videolarini havola orqali saqlang</small></span>
+                <span class="home-card-arrow">›</span>
+            </button>
+            <button class="home-card home-card--music" data-open-view="music">
+                <span class="home-card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h6V3z"/></svg></span>
+                <span class="home-card-copy"><strong>Music</strong><small>Musiqa qidiring, tinglang va Timeline’ga qo‘shing</small></span>
+                <span class="home-card-arrow">›</span>
+            </button>
+            <button class="home-card home-card--photo" data-open-view="photo">
+                <span class="home-card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm8 2.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></span>
+                <span class="home-card-copy"><strong>Photo</strong><small>Rasm toping, fonini olib tashlang, Timeline’ga qo‘ying</small></span>
+                <span class="home-card-arrow">›</span>
+            </button>
+        </div>
+        <div class="home-founder">DROP+<span id="appVersion" data-no-i18n></span> · <span>Asoschi:</span> <b data-no-i18n>Hayot Ergashev</b></div>
+    </main>
+
+    <section id="musicView" class="tool-view" hidden>
+        <div class="tool-heading">
+            <button class="back-home-btn" data-go-home aria-label="Bo‘limlarga qaytish">‹</button>
+            <div><strong>Music</strong><small>YouTube’dan musiqa qidiring</small></div>
+        </div>
+
+    <!-- Search Section -->
+    <section class="search-container">
+        <div class="search-box">
+            <svg class="search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="YouTube'dan musiqa qidiring... (masalan, lofi, cinematic)"
+                autocomplete="off"
+                aria-autocomplete="list"
+                aria-controls="searchSuggestions"
+            >
+            <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
+            <button id="searchBtn" class="search-btn" title="Qidirish">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Quick Tags -->
+    <div class="tags-scroll">
+        <button class="tag-chip" data-query="lofi hip hop background">✨ Lofi</button>
+        <button class="tag-chip" data-query="cinematic dramatic music">🎬 Cinematic</button>
+        <button class="tag-chip" data-query="deep bass beat background">💥 Bass</button>
+        <button class="tag-chip" data-query="ambient relaxing background music">🌌 Ambient</button>
+        <button class="tag-chip" data-query="energetic upbeat vlog music">⚡ Energetic</button>
+        <button class="tag-chip" data-query="fon musiqa video montaj">🎵 Fon Musiqa</button>
+        <button class="tag-chip" data-query="sad emotional piano music">🌧️ Sad Piano</button>
+        <button class="tag-chip" data-query="action trailer music">🔥 Action</button>
+    </div>
+
+    <section class="filter-bar" aria-label="Qidiruv natijalarini filtrlash">
+        <select id="rightsFilter" class="filter-select" aria-label="Musiqa litsenziyasi bo‘yicha filtr">
+            <option value="all">Huquq: Barchasi</option>
+            <option value="free">Huquq: Free</option>
+            <option value="unclear">Huquq: Noaniq</option>
+            <option value="restricted">Huquq: Copyright</option>
+        </select>
+        <select id="durationFilter" class="filter-select" aria-label="Davomiylik bo‘yicha filtr">
+            <option value="all">Davomiylik: Barchasi</option>
+            <option value="short">5 daqiqagacha</option>
+            <option value="medium">5–20 daqiqa</option>
+            <option value="long">20 daqiqadan uzun</option>
+        </select>
+        <select id="sortFilter" class="filter-select" aria-label="Natijalarni saralash">
+            <option value="relevance">Saralash: Tavsiya</option>
+            <option value="views">Ko‘p ko‘rilgan</option>
+            <option value="shortest">Qisqadan uzuniga</option>
+            <option value="longest">Uzundan qisqasiga</option>
+        </select>
+    </section>
+
+    <!-- Results Area -->
+    <main id="resultsArea" class="results-area">
+        <div class="state-box" id="initialState">
+            <svg class="state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+            </svg>
+            <div class="state-title">Musiqa qidirishni boshlang</div>
+            <div class="state-desc">Tepaga qidiruv so'zini yozing yoki tezkor janrlardan birini tanlang. Musiqani eshitib ko'rish yoki <b>+</b> tugmasi orqali to'g'ridan-to'g'ri Timeline'ga tushirish mumkin.</div>
+        </div>
+    </main>
+    </section>
+
+    <!-- Bottom Audio Preview Player -->
+    <div id="playerBar" class="player-bar">
+        <div id="playerMusicContent" class="player-music-content">
+        <div class="player-top-row">
+            <div class="player-track-info">
+                <div id="playerTrackName" class="player-track-name">Musiqa nomi</div>
+                <div id="playerTrackSub" class="player-track-sub">Eshitib ko'rish</div>
+            </div>
+            <button id="playerCloseBtn" class="player-close" title="Pleyerni yopish" aria-label="Pleyerni yopish">✕</button>
+        </div>
+        <div class="player-progress-row">
+            <span id="currentTimeLabel" class="player-time">0:00</span>
+            <input id="playerProgress" class="player-progress" type="range" min="0" max="1000" value="0" aria-label="Musiqa vaqtini o‘tkazish">
+            <span id="durationLabel" class="player-time">0:00</span>
+        </div>
+        <div class="player-bottom-row">
+            <div class="player-controls">
+                <button id="previousTrackBtn" class="player-btn player-skip-btn" title="Oldingi musiqa" aria-label="Oldingi musiqa" disabled>
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M6 5h2v14H6zM20 6v12L9 12z"/></svg>
+                </button>
+                <button id="playerToggleBtn" class="player-btn player-main-btn" title="Ijro / Pauza" aria-label="Ijro yoki pauza">
+                    <svg id="playIcon" viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg id="pauseIcon" style="display:none;" viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <button id="nextTrackBtn" class="player-btn player-skip-btn" title="Keyingi musiqa" aria-label="Keyingi musiqa" disabled>
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M16 5h2v14h-2zM4 6v12l11-6z"/></svg>
+                </button>
+            </div>
+        </div>
+        <audio id="audioPreview"></audio>
+        </div>
+        <div id="videoDownloadContent" class="video-download-content">
+            <div class="video-download-heading">
+                <div class="video-download-info">
+                    <strong id="videoDownloadTitle">Video yuklanmoqda…</strong>
+                    <small id="videoDownloadStatus">Yuklashga tayyorlanmoqda</small>
+                </div>
+                <span id="videoDownloadPercent" class="video-download-percent">0%</span>
+                <button id="cancelVideoDownloadBtn" class="player-close video-cancel-btn" title="Yuklashni bekor qilish" aria-label="Yuklashni bekor qilish">✕</button>
+            </div>
+            <div class="video-progress-track"><div id="videoProgressFill" class="video-progress-fill"></div></div>
+        </div>
+    </div>
+
+    <section id="videoView" class="tool-view video-view" hidden>
+        <div class="tool-heading">
+            <button class="back-home-btn" data-go-home aria-label="Bo‘limlarga qaytish">‹</button>
+            <div><strong>Video</strong><small>YouTube yoki Instagram videosini havola orqali saqlang</small></div>
+        </div>
+        <section class="search-container video-search-container">
+            <div class="search-box">
+                <input type="text" id="videoSearchInput" class="search-input" placeholder="YouTube yoki Instagram havolasini kiriting..." autocomplete="off">
+                <button id="videoSearchBtn" class="search-btn" title="Havolani yuklab olish" aria-label="Havolani yuklab olish"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg></button>
+            </div>
+        </section>
+        <main id="videoResultsArea" class="results-area video-results-area">
+            <div class="state-box">
+                <svg class="state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg>
+                <div class="state-title">Video havolasini kiriting</div>
+                <div class="state-desc">YouTube havolasida yuklashdan oldin sifatni tanlaysiz. Instagram havolasi (reel yoki post) to‘g‘ridan-to‘g‘ri yuklanadi.</div>
+            </div>
+        </main>
+        <footer id="videoZoomBar" class="zoom-bar">
+            <svg class="zoom-icon zoom-icon-small" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>
+            <input id="videoZoomSlider" class="zoom-slider" type="range" min="90" max="360" step="1" value="140" title="Kartalar o‘lchami" aria-label="Video kartalari o‘lchami">
+            <svg class="zoom-icon zoom-icon-large" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="1.5"/></svg>
+            <span id="videoLibraryCount" class="zoom-count"></span>
+        </footer>
+    </section>
+
+    <section id="photoView" class="tool-view photo-view" hidden>
+        <div class="tool-heading">
+            <button class="back-home-btn" data-go-home aria-label="Bo‘limlarga qaytish">‹</button>
+            <div><strong>Photo</strong><small>Rasm qidirish, yuklash va Timeline’ga qo‘yish</small></div>
+        </div>
+        <section id="photoSearchPane" class="search-container photo-search-container">
+            <div class="search-box">
+                <svg class="search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="photoSearchInput" class="search-input" placeholder="Rasm qidiring yoki Yandex / Google havolasini tashlang..." autocomplete="off">
+                <button id="photoSearchBtn" class="search-btn" title="Qidirish" aria-label="Qidirish"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+            </div>
+            <div class="photo-filter-row">
+                <label class="photo-filter"><input type="checkbox" id="photoLargeOnly"><span>Faqat katta (1920+)</span></label>
+                <button id="photoEditBtn" class="photo-edit-btn" type="button" title="Maydonda havola bo‘lsa — o‘sha rasmni, bo‘lmasa kompyuterdagi faylni tahrirlagichda ochadi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3.5 20.5 8.5 9 20H4v-5z"/><path d="m12.5 6.5 5 5"/></svg><span>Rasmni tahrirlash</span></button>
+            </div>
+        </section>
+        <main id="photoResultsArea" class="results-area photo-results-area">
+            <div class="state-box">
+                <svg class="state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="8.5" cy="9.5" r="1.3"/></svg>
+                <div class="state-title">Rasm qidiring</div>
+                <div class="state-desc">So‘z yozing — Wikimedia Commons’dagi erkin litsenziyali rasmlar chiqadi. Yoki Yandex, Google yoki istalgan saytda ochilgan rasm havolasini tashlang — asl rasm yuklanadi.</div>
+            </div>
+        </main>
+        <footer class="zoom-bar">
+            <svg class="zoom-icon zoom-icon-small" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>
+            <input id="photoZoomSlider" class="zoom-slider" type="range" min="90" max="360" step="1" value="140" title="Kartalar o‘lchami" aria-label="Rasm kartalari o‘lchami">
+            <svg class="zoom-icon zoom-icon-large" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="1.5"/></svg>
+            <span id="photoCount" class="zoom-count"></span>
+            <button id="photoFolderBtn" class="zoom-folder-btn" type="button" aria-label="Rasmlar papkasini tanlash"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 4a1 1 0 0 1 1-1h3.2l1.3 1.5h6.5a1 1 0 0 1 1 1V12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1z"/></svg></button>
+        </footer>
+    </section>
+
+    <div id="photoEditor" class="photo-editor" hidden>
+        <div class="editor-head">
+            <strong>Rasmni tahrirlash</strong>
+            <span class="editor-zoom">
+                <button id="editorZoomOut" type="button" class="editor-zoom-btn" title="Uzoqlashtirish" aria-label="Uzoqlashtirish">−</button>
+                <button id="editorZoomFit" type="button" class="editor-zoom-label" title="Butun rasmni ko‘rsatish"><span id="editorZoomLabel">100%</span></button>
+                <button id="editorZoomIn" type="button" class="editor-zoom-btn" title="Yaqinlashtirish" aria-label="Yaqinlashtirish">+</button>
+            </span>
+            <span id="editorInfo" class="editor-info"></span>
+            <button id="editorClose" class="player-close" type="button" aria-label="Yopish">✕</button>
+        </div>
+        <div id="editorStage" class="editor-stage">
+            <canvas id="editorCanvas" class="editor-canvas" width="1" height="1"></canvas>
+            <div id="editorCursor" class="editor-cursor"></div>
+        </div>
+        <div id="editorBusy" class="editor-busy" hidden>
+            <div class="spinner editor-busy-spinner"></div>
+            <div id="editorBusyText"></div>
+        </div>
+        <div class="editor-tools">
+            <button type="button" class="editor-tool active" data-editor-tool="erase" title="Bosib yurgizilgan joy shaffof bo‘ladi">O‘chirg‘ich</button>
+            <button type="button" class="editor-tool" data-editor-tool="restore" title="O‘chirilgan joyni asl holiga qaytaradi">Tiklash</button>
+            <input id="editorBrush" class="zoom-slider editor-brush" type="range" min="4" max="200" step="1" value="40" title="Cho‘tka o‘lchami" aria-label="Cho‘tka o‘lchami">
+            <button id="editorUndo" type="button" class="editor-tool editor-undo" title="Oxirgi amalni bekor qilish" disabled>↶</button>
+        </div>
+        <div class="editor-actions">
+            <button id="editorRemoveBg" type="button" class="editor-action" title="Tez usul: bir necha soniya">Fonni olib tashlash</button>
+            <button id="editorRemoveBgHq" type="button" class="editor-action" title="Aniqroq usul: qo‘l, soch kabi mayda joylarni yaxshiroq ajratadi, lekin sekinroq">Aniqroq (sekin)</button>
+            <button id="editorReset" type="button" class="editor-action editor-action-quiet">Asliga qaytarish</button>
+            <button id="editorSave" type="button" class="editor-action editor-action-primary">PNG → Timeline</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <div id="videoFormatDialog" class="video-format-backdrop" hidden>
+        <section class="video-format-dialog" role="dialog" aria-modal="true" aria-labelledby="videoFormatDialogTitle">
+            <div class="video-format-dialog-heading">
+                <div>
+                    <strong id="videoFormatDialogTitle">Video formatini tanlang</strong>
+                    <small id="videoFormatDialogSub">Yuklab olishdan oldin sifatni belgilang</small>
+                </div>
+                <button id="videoFormatDialogClose" class="player-close" type="button" aria-label="Yopish">✕</button>
+            </div>
+            <div id="videoFormatOptions" class="video-format-options"></div>
+            <div class="video-format-dialog-actions">
+                <button id="videoFormatCancel" class="video-format-secondary" type="button">Bekor qilish</button>
+                <button id="videoFormatContinue" class="video-format-primary" type="button">Davom etish</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/license.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/updater.js"></script>
+</body>
+</html>

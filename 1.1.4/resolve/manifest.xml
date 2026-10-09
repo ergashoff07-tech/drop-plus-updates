@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlackmagicDesign>
+    <Plugin>
+        <Id>com.dropplus.resolve</Id>
+        <Name>DROP+</Name>
+        <Version>1.1.4</Version>
+        <Description>DROP+ - video, music and images straight to your timeline</Description>
+        <FilePath>main.js</FilePath>
+    </Plugin>
+</BlackmagicDesign>
