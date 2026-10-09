@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "version": "1.1.2",
+ "version": "1.1.3",
  "hosts": {
   "cep": {
-   "dir": "1.1.2/cep/",
+   "dir": "1.1.3/cep/",
    "files": [
     {
      "p": "CSXS/manifest.xml",
-     "h": "4ad90f9837730f21e3a260d817a3aadb0c71b6a1f22a778e33df46cb5ff97d2e",
+     "h": "dc46a36eb4d6a9aa9cf55c84d4329e9664c6028f33af7063ba794174289ce8f1",
      "s": 1720
     },
     {
@@ -67,8 +67,8 @@
     },
     {
      "p": "js/i18n.js",
-     "h": "1dd38d82985c0e00a50877409b5a7ca1c97182d63872c7ce30dd99e9d8989085",
-     "s": 32454
+     "h": "98ec09afbd5cbddd54886c5ec1e964e226b57bca9fc02df9deec77a505860b17",
+     "s": 74259
     },
     {
      "p": "js/license.js",
@@ -77,13 +77,13 @@
     },
     {
      "p": "js/main.js",
-     "h": "c62a370615be00a596d75bb49d0683c18e170d0f1f2327b3e7949ba445aedef6",
-     "s": 203228
+     "h": "9b0be702cbbf01677ff63b4b7f8aa75c246e8a1f6df8f0f6866cad55e03b68ba",
+     "s": 203010
     },
     {
      "p": "js/updater.js",
-     "h": "2e9e8a7678d21ff76c3d47ff1d4c1b61db270fef4fc61e2ad7344fe6c117f200",
-     "s": 25206
+     "h": "4933685993b6c582927720607cd0741fec21af0c21c17337ce4fdca0ca7df2a6",
+     "s": 25225
     },
     {
      "p": "jsx/premiere.jsx",
@@ -94,7 +94,7 @@
    "remove": []
   },
   "resolve": {
-   "dir": "1.1.2/resolve/",
+   "dir": "1.1.3/resolve/",
    "files": [
     {
      "p": "LICENSES.txt",
@@ -153,8 +153,8 @@
     },
     {
      "p": "js/i18n.js",
-     "h": "be3b11349fc2608df98cc24db2b4c151e8399f405640d3ae0f967325e77f9971",
-     "s": 33490
+     "h": "98ec09afbd5cbddd54886c5ec1e964e226b57bca9fc02df9deec77a505860b17",
+     "s": 74259
     },
     {
      "p": "js/license.js",
@@ -163,13 +163,13 @@
     },
     {
      "p": "js/main.js",
-     "h": "c58a01e1759d66f70bbb5d6e2f113f4a2d564d6f8440983930d510d5a95e9020",
-     "s": 202598
+     "h": "7d3048ee5b3056377d0b50fef7b8b7a6d9453b7df1de602ad97a8ec6987f5013",
+     "s": 202807
     },
     {
      "p": "js/updater.js",
-     "h": "5d6ba9aa2644bb89db0b1e722f1ec6db9c98ed682f77cff223a4caf11cfaec4d",
-     "s": 25185
+     "h": "af2a374f795f8e2c70dcc58c69cd62a70406835f14fd3324d48bf303f81f982e",
+     "s": 24980
     },
     {
      "p": "main.js",
@@ -178,12 +178,12 @@
     },
     {
      "p": "manifest.xml",
-     "h": "bbc8ae6f5594d176e4157c4a8ea3100f86d7ae88ee0f41bb2ac29b1e58a0a975",
+     "h": "21cc89004bf2a06c2c24e0f516bc9f9da1484720d1f6ea6756921965454ef996",
      "s": 333
     },
     {
      "p": "package.json",
-     "h": "12321424fc0a7cd1c7aab3b01d74a703a93189399f23534dc58bf35c20e00238",
+     "h": "ef2c57eb5bac17126a5078e5268205e77dbea93e3d4863db8c1792ca14067cb2",
      "s": 180
     },
     {
