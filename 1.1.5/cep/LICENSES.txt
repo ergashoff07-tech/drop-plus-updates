@@ -1,0 +1,13 @@
+DROP+ bundles these third-party components. Each keeps its own license.
+
+FFmpeg 7.1 (bin/ffmpeg.exe) - GNU GPL v3. https://ffmpeg.org  Source code: https://ffmpeg.org/download.html
+   Binary as distributed in the imageio-ffmpeg package (https://github.com/imageio/imageio-ffmpeg).
+yt-dlp (bin/yt-dlp.exe) - The Unlicense. https://github.com/yt-dlp/yt-dlp
+Node.js 22 (bin/node.exe) - MIT and bundled licenses. https://nodejs.org
+ONNX Runtime Web (ort/) - MIT. https://github.com/microsoft/onnxruntime
+U2-Net models u2netp, silueta (ort/*.onnx) - Apache 2.0 / MIT. https://github.com/xuebinqin/U-2-Net , https://github.com/danielgatis/rembg
+Sora and Montserrat fonts (css/fonts) - SIL Open Font License 1.1.
+Adobe CSInterface.js - Adobe CEP sample license.
+
+Videos, music and images you download remain the property of their owners.
+You are responsible for having the right to use them.
