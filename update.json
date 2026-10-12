@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "version": "1.1.4",
+ "version": "1.1.5",
  "hosts": {
   "cep": {
-   "dir": "1.1.4/cep/",
+   "dir": "1.1.5/cep/",
    "files": [
     {
      "p": "CSXS/manifest.xml",
-     "h": "a442282c2630aeba0035dd569673aaab280979227eef67d089f2cf67c328783f",
+     "h": "fc000c6391adfa8f16787352e91aa530259c218cf53c47f524cfdc398fb2452d",
      "s": 1720
     },
     {
@@ -47,8 +47,8 @@
     },
     {
      "p": "css/style.css",
-     "h": "d05fd18ad1adfe364fb3bb22a7533683285b6203f3aefd50223c60c09ffec307",
-     "s": 48284
+     "h": "ce61565f19142ec00309eba5053e29a4015d21147fa17849f97033f900c8f535",
+     "s": 50360
     },
     {
      "p": "index.html",
@@ -77,13 +77,13 @@
     },
     {
      "p": "js/main.js",
-     "h": "51d7881f03637c374ba540234894c9ae3f2ef1ca56d6679c4201b6805825f8b7",
-     "s": 203085
+     "h": "7ef5aade40a407372c23a2a2d8417dbd0de78346e62a8fdb7e77fedf9f5544c4",
+     "s": 212459
     },
     {
      "p": "js/updater.js",
-     "h": "c05a290cc900d0df1e10813d55a937bb56c71f580878bcfcec9b8e2052a17067",
-     "s": 25433
+     "h": "4848980117e77f71484543c4f77a122fc4f445953fe9cfd6a9e2b76c64073f77",
+     "s": 25567
     },
     {
      "p": "jsx/premiere.jsx",
